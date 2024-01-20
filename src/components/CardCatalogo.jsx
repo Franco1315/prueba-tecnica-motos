@@ -2,7 +2,7 @@ const CardCatalogo = ({ imagenURL, nombre, mostrarTachado, precio, contenido, co
 
 
   return (
-    <div className={`w-[20em] h-[30em] mx-auto bg-white border border-colorBordes mb-5 text-center ${etiqueta ? 'space-y-4' : 'space-y-8'}`}>
+    <div className={`w-[20em] h-[30em] mt-5 ml-2 mr-2 mx-auto bg-white border border-colorBordes mb-5 text-center overflow-hidden transition-transform transform-gpu duration-300 hover:scale-105 hover:shadow-lg ${etiqueta ? 'space-y-4' : 'space-y-8'}`}>
 
         {/* etiqueta personalizable */}
         <div className="flex justify-end">

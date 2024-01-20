@@ -6,9 +6,9 @@ const Hero = () => {
   const [progressBars, setProgressBars] = useState([0, 0, 0]);
 
   const backgrounds = [
-    'url("./public/fondo-h.png")',
-    'url("./public/fondoh-2.png")',
-    'url("./public/fondoh-3.png")',
+    'fondo-h.png',
+    'fondoh-2.png',
+    'fondoh-3.png',
   ];
 
   const barTitles = ["NUEVA E350", "CITA EN TALLER", "SCOOTER ZOONTES"];
@@ -21,14 +21,14 @@ const Hero = () => {
       btnText: "Descúbrela",
     },
     {
-      h1: "Citas en Taller",
-      h2: "Modelo XYZ",
-      p: "Otro texto descriptivo sobre el modelo XYZ. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      h1: "Citas en taller",
+      h2: "Citas en taller",
+      p: "Lorem ipsum dolor sit amet consectetur adipisicing elit harum eaque eligendi neque qui id excepturi similique dolorum sequi hic. Eveniet enim, dolore.",
       btnText: "Ver servicios",
     },
     {
-      h1: "Alquiler de Scooters",
-      h2: "Scooter Zoontes",
+      h1: "Scooters Zontes",
+      h2: "Scooters Zontes",
       p: "Descubre nuestra flota de scooters Zoontes disponibles para alquiler. ¡La mejor manera de moverte por la ciudad!",
       btnText: "Ver opciones",
     },
@@ -36,15 +36,11 @@ const Hero = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setProgressBars((prevProgressBars) => {
-        return prevProgressBars.map((prevProgress, index) => {
-          if (index === backgroundIndex) {
-            return (prevProgress + 1) % 101;
-          } else {
-            return prevProgress;
-          }
-        });
-      });
+      setProgressBars((prevProgressBars) =>
+        prevProgressBars.map((prevProgress, index) =>
+          index === backgroundIndex ? (prevProgress + 1) % 101 : prevProgress
+        )
+      );
     }, 40);
 
     setTimeout(() => {
@@ -57,20 +53,17 @@ const Hero = () => {
   }, [backgroundIndex]);
 
   return (
-    <div className="flex items-center bg-cover bg-center h-screen" style={{ backgroundImage: backgrounds[backgroundIndex] }}>
-
-      <div className="text-white mx-4 ml-16 md:max-w-[80%]">
-
+    <div className="lg:flex items-center bg-cover bg-center h-screen overflow-hidden" style={{ backgroundImage: `url(./public/${backgrounds[backgroundIndex]})`, height: '100vh' }}>
+      <div className="text-white my-16 mx-4 ml-16 md:max-w-[80%]">
         <h1 className="text-1xl uppercase font-bold italic mb-2">{heroContents[backgroundIndex].h1}</h1>
         <h2 className="text-7xl uppercase font-bold italic mb-4">{heroContents[backgroundIndex].h2}</h2>
         <p className="md:w-1/2 font-light text-sm md:text-base lg:text-lg mb-6 leading-2">
           {heroContents[backgroundIndex].p}
         </p>
-        <button className="uppercase px-6 py-2 mt-6 mb-14 bg-yellow text-dark font-bold italic">
+        <button className="uppercase px-6 py-2 mt-6 mb-14 bg-yellow hover:bg-dark hover:text-yellow duration-500 text-dark font-bold italic">
           {heroContents[backgroundIndex].btnText}
         </button>
-
-        <div className='flex'>
+        <div className='lg:flex'>
           {progressBars.map((progress, index) => (
             <ProgressBar
               key={index}
@@ -79,9 +72,7 @@ const Hero = () => {
             />
           ))}
         </div>
-
       </div>
-
     </div>
   );
 };

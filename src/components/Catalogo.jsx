@@ -9,7 +9,7 @@ const Catalogo = () => {
 
           <div className='flex justify-between mt-16 mb-8'>
               <h1 className='text-4xl font-bold italic uppercase'>Modelos destacados</h1>      
-              <button className='bg-yellow p-2 font-bold italic uppercase'>Ver más modelos</button>
+              <button className='bg-yellow p-2 font-bold italic uppercase hover:bg-dark hover:text-yellow duration-500'>Ver más modelos</button>
           </div>
 
           <div className='flex flex-row overflow-y-auto justify-center lg:justify-start scrollbar-thin scrollbar-thumb-black scrollbar-thumb-rounded-full scrollbar-track-gray-100 scrollbar'>
@@ -18,7 +18,7 @@ const Catalogo = () => {
                <CardCatalogo
                    etiqueta={true}
                    contenidoEtiqueta='Nueva'
-                   imagenURL="./public/moto-1.png"
+                   imagenURL="/moto-1.png"
                    nombre="ZONTES E350 2024"
                    mostrarTachado={true}
                    contenido="5.999€"
@@ -27,7 +27,7 @@ const Catalogo = () => {
                />
                <CardCatalogo
                    etiqueta={false}
-                   imagenURL="./public/moto-2.png"
+                   imagenURL="/moto-2.png"
                    nombre="ZONTES ZT 125 2024"
                    mostrarTachado={false}
                    contenido="Desde"
@@ -38,7 +38,7 @@ const Catalogo = () => {
 
                 <CardCatalogo
                   etiqueta={false}
-                  imagenURL="./public/moto-3.png"
+                  imagenURL="/moto-3.png"
                   nombre="ZONTES Z2 125 2024"
                   contenido="nada"
                   precio="6.250€"
@@ -48,7 +48,7 @@ const Catalogo = () => {
                 <CardCatalogo
                   etiqueta={true}
                   contenidoEtiqueta='Nueva'
-                  imagenURL="./public/moto-4.png"
+                  imagenURL="/moto-4.png"
                   nombre="ZONTES T350 X 2024"
                   contenido="nada"
                   precio="4.430€"
@@ -57,7 +57,7 @@ const Catalogo = () => {
 
                 <CardCatalogo
                   etiqueta={false}
-                  imagenURL="./public/moto-1.png"
+                  imagenURL="/moto-1.png"
                   nombre="ZONTES T620 X 2024"
                   mostrarTachado={true}
                   contenido="4360€"
@@ -69,7 +69,7 @@ const Catalogo = () => {
                   etiqueta={true}
                   contenidoEtiqueta='Pronto'
                   etiquetaNueva='Pronto'
-                  imagenURL="./public/moto-3.png"
+                  imagenURL="/moto-3.png"
                   nombre="ZONTES T150 X 2024"
                   contenido="nada"
                   precio="5.999€"
@@ -79,7 +79,7 @@ const Catalogo = () => {
                 <CardCatalogo
                   etiqueta={true}
                   contenidoEtiqueta='Nueva'
-                  imagenURL="./public/moto-2.png"
+                  imagenURL="/moto-2.png"
                   nombre="ZONTES T450 X 2024"
                   mostrarTachado={false}
                   contenido="Desde"
