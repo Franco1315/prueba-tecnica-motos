@@ -53,7 +53,7 @@ const Hero = () => {
   }, [backgroundIndex]);
 
   return (
-    <div className="lg:flex items-center bg-cover bg-center h-screen overflow-hidden" style={{ backgroundImage: `url(./public/${backgrounds[backgroundIndex]})`, height: '100vh' }}>
+    <div className="lg:flex items-center bg-cover bg-center h-screen overflow-hidden" style={{ backgroundImage: `url(/${backgrounds[backgroundIndex]})`, height: '100vh' }}>
       <div className="text-white my-16 mx-4 ml-16 md:max-w-[80%]">
         <h1 className="text-1xl uppercase font-bold italic mb-2">{heroContents[backgroundIndex].h1}</h1>
         <h2 className="text-7xl uppercase font-bold italic mb-4">{heroContents[backgroundIndex].h2}</h2>
