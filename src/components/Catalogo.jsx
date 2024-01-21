@@ -2,7 +2,6 @@ import CardCatalogo from './CardCatalogo'
 
 const Catalogo = () => {
 
-
   return (
 
     <div className='mx-auto flex flex-col justify-center max-w-[90%]'>

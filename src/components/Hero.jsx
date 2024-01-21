@@ -24,13 +24,13 @@ const Hero = () => {
     {
       h1: "Citas en taller",
       h2: "Citas en taller",
-      p: "Lorem ipsum dolor sit amet consectetur adipisicing elit harum eaque eligendi neque qui id excepturi similique dolorum sequi hic. Eveniet enim, dolore.",
+      p: "Lorem ipsum dolor sit amet consectetur adipisicing elit harum eaque eligendi neque qui id excepturi similique dolorum sequi hic.",
       btnText: "Ver servicios",
     },
     {
       h1: "Scooters Zontes",
       h2: "Scooters Zontes",
-      p: "Descubre nuestra flota de scooters Zoontes disponibles para alquiler. ¡La mejor manera de moverte por la ciudad!",
+      p: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati harum eaque eligendi neque qui id excepturi similique dolorum sequi hic.",
       btnText: "Ver opciones",
     },
   ];
@@ -60,7 +60,7 @@ const Hero = () => {
       <div className="absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-center text-white ml-14 lg:flex ">
         <h1 className="text-1xl lg:text-2xl xl:text-3xl uppercase font-bold italic mb-2">{heroContents[backgroundIndex].h1}</h1>
         <h2 className="text-4xl lg:text-7xl xl:text-8xl uppercase font-bold italic mb-4">{heroContents[backgroundIndex].h2}</h2>
-        <p className="md:w-full lg:w-1/2 font-light text-sm md:text-base lg:text-lg mb-6 leading-2">
+        <p className=" lg:w-1/2 md:w-2/4 sm:w-2/4 ont-light text-sm  lg:text-lg mb-6 leading-2">
           {heroContents[backgroundIndex].p}
         </p>
         <button className="uppercase px-6 py-2 mt-6 mb-14 bg-yellow hover:bg-dark hover:text-yellow duration-500 text-dark font-bold italic w-[10em]">
