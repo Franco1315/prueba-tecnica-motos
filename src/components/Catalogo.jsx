@@ -12,7 +12,7 @@ const Catalogo = () => {
               <button className='bg-yellow p-2 font-bold italic uppercase hover:bg-dark hover:text-yellow duration-500'>Ver más modelos</button>
           </div>
 
-          <div className='flex flex-row overflow-y-auto justify-start scrollbar-thin scrollbar-thumb-black scrollbar-thumb-rounded-full scrollbar-track-gray-100 cursor-grab scrollbar'>
+          <div className='flex flex-row overflow-y-auto justify-start scrollbar-thin scrollbar-thumb-black scrollbar-thumb-rounded-full scrollbar-track-gray-100  scrollbar'>
 
            {/* Cards */}
            <div className='flex gap-4 text-white mb-4'>
