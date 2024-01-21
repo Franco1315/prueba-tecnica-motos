@@ -68,7 +68,7 @@ const Hero = () => {
         </button>
       </div>
 
-      <div className='absolute bottom-20 left-6 right-0 mx-auto mt-1 lg:mb-0 lg:ml-14'>
+      <div className='absolute bottom-28 left-6 right-0 mx-auto mt-1 lg:mb-0 lg:ml-14'>
         <div className="lg:flex">
           {progressBars.map((progress, index) => (
             <ProgressBar
