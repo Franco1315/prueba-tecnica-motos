@@ -1,11 +1,11 @@
 import CardServicios from './CardServicios'
 
-
 const Servicios = () => {
   return (
-
     <div>
-      <div className='text-center mt-16 max-w-[80%] mx-auto'>
+
+      {/* contenido de la servicios */}
+      <div className='text-center mt-16 max-w-[80%] mx-auto select-none'>
 
         <h1 className='uppercase mb-2 text-yellow font-bold italic '>Concesionario oficial</h1>
 
@@ -21,15 +21,17 @@ const Servicios = () => {
         <p className='mb-10'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, iste.</p>
       </div>
 
-    <div className='flex flex-wrap justify-center gap-4 lg:justify-between mb-16 max-w-6xl mx-auto '>
+        {/* Card de servicios */}
+        <div className='flex flex-wrap justify-center gap-4 lg:justify-between mb-16 max-w-6xl mx-auto '>
 
-      <CardServicios imagenServicio='/alquiler-s.png' tituloServicio='Alquiler' />
-      <CardServicios imagenServicio='/renting-s.png' tituloServicio='Renting' />
-      <CardServicios imagenServicio='/cita-taller-s.png' tituloServicio='Cita en taller' />
-      <CardServicios imagenServicio='/motos-s.png' tituloServicio='Motos' />
-      
+          <CardServicios imagenServicio='/alquiler-s.png' tituloServicio='Alquiler' />
+          <CardServicios imagenServicio='/renting-s.png' tituloServicio='Renting' />
+          <CardServicios imagenServicio='/cita-taller-s.png' tituloServicio='Cita en taller' />
+          <CardServicios imagenServicio='/motos-s.png' tituloServicio='Motos' />
+          
+        </div>
+
     </div>
-  </div>
   )
 }
 

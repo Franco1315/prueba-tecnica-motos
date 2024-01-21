@@ -7,14 +7,16 @@ const Catalogo = () => {
 
     <div className='mx-auto flex flex-col justify-center max-w-[90%]'>
 
+        {/* texto de la sección */}
           <div className='flex justify-between mt-16 mb-8'>
-              <h1 className='text-4xl font-bold italic uppercase'>Modelos destacados</h1>      
+              <h1 className='text-4xl font-bold italic uppercase select-none'>Modelos destacados</h1>      
               <button className='bg-yellow p-2 font-bold italic uppercase hover:bg-dark hover:text-yellow duration-500'>Ver más modelos</button>
           </div>
 
-          <div className='flex flex-row overflow-y-auto justify-center lg:justify-start scrollbar-thin scrollbar-thumb-black scrollbar-thumb-rounded-full scrollbar-track-gray-100 scrollbar'>
-           
-           <div className='lg:flex gap-4 text-white mb-4'>
+          <div className='flex flex-row overflow-y-auto justify-start scrollbar-thin scrollbar-thumb-black scrollbar-thumb-rounded-full scrollbar-track-gray-100 cursor-grab scrollbar'>
+
+           {/* Cards */}
+           <div className='flex gap-4 text-white mb-4'>
                <CardCatalogo
                    etiqueta={true}
                    contenidoEtiqueta='Nueva'

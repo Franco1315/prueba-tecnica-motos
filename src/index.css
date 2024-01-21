@@ -11,7 +11,7 @@ h1, h2, span, p, button, h3, a, li{
 
 .scrollbar {
   scrollbar-width: thin;
-  scrollbar-color: black white; 
+  scrollbar-color: #151515 white; 
 }
 
 .scrollbar::-webkit-scrollbar {
@@ -20,7 +20,7 @@ h1, h2, span, p, button, h3, a, li{
 }
 
 .scrollbar::-webkit-scrollbar-thumb {
-  background-color: black; 
+  background-color: #151515; 
   border-radius: 6px; 
   height: 5px; 
 }
@@ -29,4 +29,8 @@ h1, h2, span, p, button, h3, a, li{
   background-color: #DFDDDA; 
   border-radius: 6px; 
 }
+
+
+
+
 
