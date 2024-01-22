@@ -14,7 +14,7 @@ const CardCatalogo = ({ imagenURL, nombre, mostrarTachado, precio, contenido, co
         </div>
 
         {/* imagen */}
-        <img className="w-full h-50 object-cover" src={imagenURL} alt="Producto" />
+        <img className="w-full h-50 object-cover" src={imagenURL} alt="Modelo de moto"/>
 
 
         {/* datos de la moto */}
@@ -34,7 +34,7 @@ const CardCatalogo = ({ imagenURL, nombre, mostrarTachado, precio, contenido, co
 
             {/* rebajas o titulo "desde" */}
             {contenido !== 'nada' ? (
-            mostrarTachado ? (
+             mostrarTachado ? (
                 <p className="text-contenidoCatalogo fuente-light italic mt-2 line-through opacity-100">{contenido}</p>
             ) : (
                 <p className="text-contenidoCatalogo fuente-light italic mt-2 uppercase opacity-100">{contenido}</p>

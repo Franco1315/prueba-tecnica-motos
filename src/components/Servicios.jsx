@@ -22,7 +22,7 @@ const Servicios = () => {
       </div>
 
         {/* Card de servicios */}
-        <div className='flex flex-wrap justify-center gap-4 lg:justify-between mb-16 max-w-6xl mx-auto '>
+        <div className='flex w-full flex-wrap justify-center gap-4 lg:justify-between mb-16 max-w-[90%] mx-auto '>
 
           <CardServicios imagenServicio='/alquiler-s.png' tituloServicio='Alquiler' />
           <CardServicios imagenServicio='/renting-s.png' tituloServicio='Renting' />

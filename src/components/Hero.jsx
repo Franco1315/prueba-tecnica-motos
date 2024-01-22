@@ -55,20 +55,27 @@ const Hero = () => {
 
   return (
     <div className="relative bg-cover bg-center h-screen overflow-hidden">
+
       <Carrusel images={backgrounds} />
 
-      <div className="absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-center text-white ml-6 lg:flex lg:ml-20 ">
+      <div className="absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-center text-white ml-6 lg:flex lg:ml-20 select-none">
+
         <h1 className="text-1xl lg:text-2xl xl:text-xl uppercase font-bold italic mb-2">{heroContents[backgroundIndex].h1}</h1>
+
         <h2 className="text-4xl lg:text-6xl xl:text-8xl uppercase font-bold italic mb-4">{heroContents[backgroundIndex].h2}</h2>
+
         <p className=" lg:w-1/2 md:w-2/4 sm:w-2/4 ont-light text-sm  lg:text-lg lg:mb-8 mb-4 leading-2">
           {heroContents[backgroundIndex].p}
         </p>
+
         <button className="uppercase px-6 py-2 mb-14 bg-yellow hover:bg-dark hover:text-yellow duration-500 text-dark font-bold italic w-[10em]  ">
           {heroContents[backgroundIndex].btnText}
         </button>
+
       </div>
 
       <div className='absolute bottom-28 left-6 right-0 mx-auto mt-1 lg:mb-0 lg:ml-14'>
+
         <div className="lg:flex">
           {progressBars.map((progress, index) => (
             <ProgressBar
@@ -78,6 +85,7 @@ const Hero = () => {
             />
           ))}
         </div>
+
       </div>
     </div>
   );

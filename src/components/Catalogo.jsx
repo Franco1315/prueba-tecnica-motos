@@ -12,7 +12,7 @@ const Catalogo = () => {
               <button className='bg-yellow p-2 font-bold italic uppercase hover:bg-dark hover:text-yellow duration-500'>Ver más modelos</button>
           </div>
 
-          <div className='flex flex-row overflow-y-auto justify-start scrollbar-thin scrollbar-thumb-black scrollbar-thumb-rounded-full scrollbar-track-gray-100  scrollbar'>
+          <div className='flex flex-row overflow-y-auto justify-start scrollbar-thin scrollbar-thumb-black scrollbar-thumb-rounded-full scrollbar-track-gray-100 scrollbar'>
 
            {/* Cards */}
            <div className='flex gap-4 text-white mb-4'>
@@ -53,7 +53,7 @@ const Catalogo = () => {
                   nombre="ZONTES T350 X 2024"
                   contenido="nada"
                   precio="4.430€"
-                  colores={['bg-redMotos', 'bg-black']}
+                  colores={['bg-black','bg-redMotos']}
                 />
 
                 <CardCatalogo
@@ -63,13 +63,12 @@ const Catalogo = () => {
                   mostrarTachado={true}
                   contenido="4360€"
                   precio="3.999€"
-                  colores={['bg-black', 'bg-white', 'bg-red-600']}
+                  colores={['bg-black', 'bg-white', 'bg-redMotos']}
                 />
 
                 <CardCatalogo
                   etiqueta={true}
                   contenidoEtiqueta='Pronto'
-                  etiquetaNueva='Pronto'
                   imagenURL="/moto-3.png"
                   nombre="ZONTES T150 X 2024"
                   contenido="nada"
